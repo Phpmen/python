@@ -1,0 +1,358 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "header"
+::placeholder
+	color: #666
+::selection
+	background-color: #000
+	color: $white
+html, body
+	height: 100%
+	width: 100%
+body
+	min-width: 320px
+	max-width: 1920px
+	width: 100%
+	position: relative
+	line-height: 1.6
+	font: 15px $default-font
+	margin: 0 auto
+	input, textarea
+		border: #666666 1px solid
+		outline: none
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.wrapper
+	width: 100%
+	overflow: hidden
+.first-page
+	background-color: $accent
+	position: relative
+	width: 100%
+	margin: 0 auto
+	&-img
+    	margin-top: 100px
+    	z-index: 2
+    	padding: 3em
+	&-text-h2
+		font: 6.67777rem $default-font
+		color: $white
+		margin: 225px 0 40px 0
+		letter-spacing: .15em
+		text-transform: uppercase
+	section
+		z-index: 2
+	&-text
+		font: 1.6rem $default-font
+		color: $white
+		margin-bottom: 26px
+		letter-spacing: .15em
+		text-transform: uppercase
+	&-triangle
+    	right: 0
+    	width: 100%
+    	bottom: -410px
+    	border: 410px solid transparent
+    	border-right: 1920px solid $accent
+    	position: absolute
+    	content: ''
+    	z-index: 1
+.content-2
+	background-color: $bl_bgc
+	padding: 550px 0 200px
+	position: relative
+	color: white
+	&-block
+		width: 1200px
+		width: 80%
+		margin: 0 auto
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		flex-direction: row
+		-webkit-box-direction: normal
+		justify-content: center
+		&-honey
+			position: absolute
+			bottom: -145px
+		&-1
+			width: 30%
+			display: flex
+			flex-direction: column
+			img
+				margin: auto
+				width: 80%
+				margin-bottom: 20px
+			&-weight
+				font: 4.666667rem $default-font
+				line-height: 0.8em
+				width: 80%
+				text-align: center
+				margin: auto
+				margin-top: 10px
+				letter-spacing: 0.1em
+				span
+					font-size: 2.666667rem
+		&-2
+			width: 30%
+			display: flex
+			flex-direction: column
+			img
+				margin: auto
+				width: 100%
+				margin-bottom: 20px
+			&-weight
+				font: 4.666667rem $default-font
+				line-height: 0.8em
+				text-align: center
+				margin-top: 20px
+				letter-spacing: 0.1em
+				span
+					font-size: 2.666667rem
+		&-3
+			width: 30%
+			display: flex
+			flex-direction: column
+			img
+				margin: auto
+				width: 90%
+			&-weight
+				font: 4.666667rem $default-font
+				line-height: 0.8em
+				width: 90%
+				text-align: center
+				margin: auto
+				margin-bottom: 20px
+				letter-spacing: 0.1em
+				span
+					font-size: 2.666667rem
+.black
+	opacity: 0
+	width: 515px
+	height: 290px
+	background-color: #000
+.content-3
+	position: relative
+	padding: 400px 0 150px
+	background-color: $accent
+	color: $white
+	&-honey
+		position: absolute
+		top: -1px
+	&-name
+		font: 6.67777rem $default-font
+		letter-spacing: 0.1em
+		margin-bottom: 75px
+	&-block
+		display: flex
+		justify-content: space-around
+		width: 100%
+		margin: 0 auto
+		margin-top: 70px
+		&-1
+			position: relative
+			width: 515px
+			height: 290px
+			background-image: url(../img/i-1.jpg)
+			background-position: -240px
+			background-size: 1000px
+			margin-bottom: 150px
+			&-text
+				font: 2rem $default-font
+				opacity: 0
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 50% 
+				left: 50%
+				width: 100%
+				text-align: center
+			&-button
+				font: 1rem $default-font
+				text-transform: uppercase
+				letter-spacing: 0.1em
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 70% 
+				left: 50%
+				cursor: pointer
+				background-color: rgba(0,0,0,0)
+				color: white
+				border: 1px solid $white
+				border-radius: 3px
+				padding: 0.5em 1.5em
+				opacity: 0
+			&:hover .black
+				opacity: 0.7
+				transition: opacity 0.15s ease-out
+			&:hover &-text, &:hover &-button
+				opacity: 1
+				transition: opacity 0.15s ease-out
+			&-button:hover
+				transition: all 0.15s ease-in
+				background-color: $white
+				color: black
+				border: none
+				outline: 1px solid $white
+		&-2
+			position: relative
+			width: 515px
+			height: 290px
+			background-image: url(../img/i-2.jpg)
+			background-position: -366px
+			background-size: 1200px
+			margin-bottom: 150px
+			&-text
+				font: 2rem $default-font
+				opacity: 0
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 50% 
+				left: 50%
+				width: 100%
+				text-align: center
+			&-button
+				font: 1rem $default-font
+				text-transform: uppercase
+				letter-spacing: 0.1em
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 70% 
+				left: 50%
+				cursor: pointer
+				background-color: rgba(0,0,0,0)
+				color: white
+				border: 1px solid $white
+				border-radius: 3px
+				padding: 0.5em 1.5em
+				opacity: 0
+			&:hover .black
+				opacity: 0.7
+				transition: opacity 0.15s ease-out
+			&:hover &-text, &:hover &-button
+				opacity: 1
+				transition: opacity 0.15s ease-out
+			&-button:hover
+				transition: all 0.15s ease-in
+				background-color: $white
+				color: black
+				border: none
+				outline: 1px solid $white
+		&-3
+			position: relative
+			width: 515px
+			height: 290px
+			background-position: -58px 0
+			background-size: 560px
+			background-image: url(../img/i-3.jpg)
+			background-position: -427px -94px
+			background-size: 1060px
+			margin-bottom: 150px
+			&-text
+				font: 2rem $default-font
+				opacity: 0
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 50% 
+				left: 50%
+				width: 100%
+				text-align: center
+				color: white
+			&-button
+				font: 1rem $default-font
+				text-transform: uppercase
+				letter-spacing: 0.1em
+				position: absolute
+				transform: translate(-50%,-50%)
+				top: 70% 
+				left: 50%
+				cursor: pointer
+				background-color: rgba(0,0,0,0)
+				color: white
+				border: 1px solid $white
+				border-radius: 3px
+				padding: 0.5em 1.5em
+				opacity: 0
+			&:hover .black
+				opacity: 0.7
+				transition: opacity 0.15s ease-out
+			&:hover &-text, &:hover &-button
+				opacity: 1
+				transition: opacity 0.15s ease-out
+			&-button:hover
+				transition: all 0.15s ease-in
+				background-color: $white
+				color: black
+				border: none
+				outline: 1px solid $white
+.delivery
+	background-color: $bl_bgc
+	color: $white
+	padding: 200px 0 150px
+	&-name
+	    font: 8rem $default-font
+	    margin: 0 0 160px 50px
+	    letter-spacing: .1em
+	&-1
+		margin-top: 60px
+	&-row
+		display: flex
+		flex-direction: row
+		align-items: center
+		margin: 160px 0
+	&-circle
+		display: flex
+		margin:  0 60px
+		border: 4px solid $white
+		border-radius: 50%
+		width: 250px
+		height: 250px
+	&-number
+		font: 8rem $default-font
+		margin: auto
+	&-text
+		font: 6.666667rem $default-font
+		letter-spacing: 0.1em
+		margin: 60px 0
+	&-1-img
+		width: 1549px
+		margin: 60px auto
+	&-2
+		margin-top: 60px
+		&-img
+			display: block
+			margin: 60px auto
+	&-3
+		img
+			width: 100%
+			height: 100%
+.footer
+	display: flex
+	flex-direction: row
+	background-color: $bl_bgc + rgb(30,30,30)
+	color: $white
+	letter-spacing: .1em
+	padding: 70px 0 40px
+	a
+		color: $white
+	section
+		margin-left: 60px
+	&-block-2
+		font: 3rem $default-font
+		width: 100%
+		text-align: center
+	&-name
+		font: 6.666667rem $header-font
+		text-transform: uppercase
+		letter-spacing: 0.15em
+		margin-bottom: 50px
+	&-description
+		font: 1.666667rem $default-font
+		margin-bottom: 70px
+	&-phone, &-mail
+		a
+			font: 4rem $default-font
+			margin: 0 0 30px 60px
+@import "media" // Always at the end
